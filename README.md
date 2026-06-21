@@ -4,3 +4,4 @@ Curso basico de Unity
 - El Cerebro del Jugador (C#, Cámara y Física Inicial)
 - Leyes de la Física, Colisiones y Sensores
 - Fábrica de Objetos y Recompensas (Prefabs e Instanciación)
+- Interfaz de Usuario (UI) y Ciclo de Juego

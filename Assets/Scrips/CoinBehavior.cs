@@ -13,7 +13,7 @@ public class CoinBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //FindAnyObjectByType<GameManager>().SumarPuntos(1);
+            FindAnyObjectByType<GameManager>().SumarPuntos(1);
             Destroy(gameObject);
         }
     }

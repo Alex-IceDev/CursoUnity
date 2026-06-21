@@ -12,12 +12,14 @@ public class GameManager : MonoBehaviour
     public void SumarPuntos(int cantidad)
     {
         puntosTotales += cantidad;
-        textoPuntos.text = "Puntos: " + puntosTotales.ToString();
+        textoPuntos.text = "Puntos: " + puntosTotales;
         Debug.Log("Puntos Totales: " + puntosTotales);
     }
 
     public void ReiniciarJuego()
     {
+        Debug.Log("Reiniciando Juego...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Juego Reiniciado");
     }
 }
