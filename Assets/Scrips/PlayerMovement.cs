@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movimiento")]
-    public float speed = 5f;
+    public float speed = 10f;
     public float jumpForce = 5f;
 
     [Header("Sensibilidad del Mouse")]
@@ -55,6 +55,12 @@ public class PlayerMovement : MonoBehaviour
             // Aplica un impulso físico vertical inmediato
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             estaEnSuelo = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 
